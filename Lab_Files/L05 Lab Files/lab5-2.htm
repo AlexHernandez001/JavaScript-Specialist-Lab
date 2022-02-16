@@ -5,7 +5,6 @@
 <title>Lab 5-2</title>
 
 <script type="text/javascript">
-<!--
 
 /************************************************
   The checkGrade() function checks a numerical
@@ -15,20 +14,9 @@
 function checkGrade(form) {
   var myGrade = parseFloat(form.myText.value);
   
-/***********************************************
-  Create a while statement. In the conditional 
-  expression, use the isNaN function to test the
-  myGrade variable. If myGrade is not a number,
-  reassign myGrade the return value if a prompt 
-  that asks the user to input a numerical value.
-  The while loop will continue until the user 
-  enters a number.
-***********************************************/
-
-
-
-
-
+  while(isNaN(myGrade))
+    myGrade = parseInt(prompt("Please enter a numerical grade value"))
+  // loops until a number is given and is then turned into an integer andis set as myGrade's new value
   
   if(myGrade >= 91) {
     alert("Your grade is an A.");
@@ -41,7 +29,6 @@ function checkGrade(form) {
   }
 }
 
-//-->
 </script>
 
 </head>
