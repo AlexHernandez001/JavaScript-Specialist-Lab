@@ -21,13 +21,12 @@ button's value attribute equal to Close. Add an onClick
 event handler to call the window.close() method.
 
 ******************************************************/
-  
 function smallWindow() {
-    var myWindow = open(window[]"", "Window Name", "height=100, width=100")
-}
-
+var myWindow = open("", "Window Name", "height=100, width=100")
 myWindow.document.open();
+myWindow.document.write("<form> <input type='button' value='Close' onClick='window.close();'></form>")
 myWindow.document.close();
+}
 </script>
 
 </head>
@@ -38,9 +37,6 @@ myWindow.document.close();
 <hr />
 <form name="myForm">
 <input type="button" value="Open New Window" onClick="smallWindow();" />
-</form>
-<form>
-    <input type="button" value="Close" onClick="document.close(myWindow);">
 </form>
 </body>
 </html>
