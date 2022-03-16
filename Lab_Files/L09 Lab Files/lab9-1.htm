@@ -19,6 +19,25 @@ function changeButton()
 	var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Uncle Sam!";
 	alert("Hello " + header);
   }
+  if(document.getElementById('radiobuttonDestiny2').checked === true)
+  {
+	radioButton = document.getElementById('radiobuttonDestiny2').value;
+	var header = document.getElementById('radiobuttonDestiny2').value.innerHTML = "This is my favorite game";
+	alert("Hello " + header);
+  }
+  if(document.getElementById('radiobuttonRainbowSixSiege').checked === true)
+  {
+	radioButton = document.getElementById('radiobuttonRainbowSixSiege').value;
+	var header = document.getElementById('radiobuttonRainbowSixSiege').value.innerHTML = "This is my favorite tactical shooter";
+	alert("Hello " + header);
+  }
+  if(document.getElementById('radiobuttonStellaris').checked === true)
+  {
+	radioButton = document.getElementById('radiobuttonStellaris').value;
+	var header = document.getElementById('radiobuttonStellaris').value.innerHTML = "This is my Favorite Grand Strategy";
+	alert("Hello " + header);
+  }
+  
   getTest();
 }
 </script>
@@ -32,8 +51,8 @@ function changeButton()
 <input id="radiobuttonWebdev" type="radio" name="group1" value="Web_Development" checked>Web Development</input><br />
 <input id="radiobuttonGovernment" type="radio" name="group1" value="Government">U.S. Government</input><br />
 <input id="radiobuttonDestiny2" type="radio" name="group1" value="Destiny_2">Destiny 2</input><br />
-<input id="radiobuttonRainbowSixSiege" type="radio" name="group1" value="Rainbow_Six_Siege">Destiny 2</input><br />
-<input id="c" type="radio" name="group1" value="C">C</input><br />
+<input id="radiobuttonRainbowSixSiege" type="radio" name="group1" value="Rainbow_Six_Siege">Rainbow Six Siege</input><br />
+<input id="radiobuttonStellaris" type="radio" name="group1" value="Stellaris">Stellaris</input><br />
 
 
 <script type="text/javascript">
@@ -61,6 +80,11 @@ function getTest()
   if(radioButton == "Rainbow_Six_Siege")
   {
 	document.write("<p>Here's a great site if you're interested in Rainbow Six Siege:</p><a href=https://www.ubisoft.com/en-us/game/rainbow-six/siege>Ubisoft - Rainbow Six Siege</a>");
+  }
+  
+  if(radioButton == "Stellaris")
+  {
+	document.write("<p>Here's a great site if you're interested in Stellaris:</p><a href=https://www.paradoxinteractive.com/games/stellaris/about>Paradox Interactive - Stellaris</a>");
   }
 }
 
