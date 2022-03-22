@@ -5,20 +5,18 @@
 <title>Lab 10-3</title>
 
 <script type="text/javascript">
-<!--
+
 
   function isSelected(form) {
-    var len = form.mySelect.length;
-  
-// Create for loop
-  
-  
-  
-  
-  
+    var len = form.mySelect.length;  
+    
+    for(var i = 0; i < len; i++) {
+    if(form.mySelect.options[i].selected)
+      alert("Value: " + form.mySelect.options[i].value);
+  }  
   } 
 
-//-->
+
 </script>
 </head>
 <body>
