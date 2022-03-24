@@ -8,20 +8,18 @@
     
     function validate(form) {
         if (form.number.length == 16 && form.number[0] == 4 && form.ccard.value == "visa") {
-        alert("test")
+            alert("valid")
         }
-
-
-
-
-
-
-
-
+        else if (form.number.length == 16 && form.number[0] == 5 && form.ccard.value == "mc") {
+            alert("valid")
+        }
+        else if (form.number.length == 15 && form.number[0] == 3 && form.ccard.value == "amex") {
+            alert("valid")
+        }
+        else {
+            alert("not valid")
+        }
     }
-
-  
-
 
 </script>
 
